@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    width: 90%;
+    margin: 10vh auto 0;
+    /* border: 1px solid gray; */
+}
+
+.calcs-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+
+}
+
+.total{
+    text-align: center;
+    width: 47%;
+    padding: .6rem;
+}
+
+.tax{
+    background-color: #d6eadf;
+}
+.payment{
+    background-color: #e5d0d3;
+}
+
+.btn{
+    border: 1px solid #c5c4c4;
+    border-radius: 2px;
+    background-color: transparent;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+svg{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.table-container{
+    overflow: auto;
+    margin-bottom: 4rem;
+}
+
+table{
+    text-align: right;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:first-child td{
+    background-color: #b1aeae;
+    width: 10.5%;
+}
+
+td:first-child{
+    text-align: center;
+}
+.btn-controls{
+    display: flex;
+    justify-content: space-around;
+    color: #2984eb;
+}
+td{
+    border: 1px solid #b1aeae;
+    padding: 5px;
+    min-width: 100px;
+}
+
+select,
+input,
+input:focus{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+
+@media screen and (max-width:568px) {
+    .container{
+        margin-top: 2rem;
+    }
+    .calcs-container{
+        flex-direction: column;
+    }
+    .total{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .table-container{
+        max-height: 70vh;
+    }
+}
